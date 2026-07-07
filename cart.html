@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="text-align:center;">🛒 My Cart</h1>
+
+<div id="cart-items" style="padding:20px;"></div>
+
+<script>
+
+let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+let html = "";
+let total = 0;
+
+cartItems.forEach((item,index)=>{
+
+let price = parseInt(item.price.replace("₹",""));
+
+total += price;
+
+html += `
+<div style="background:white;padding:15px;margin:10px;border-radius:10px;">
+<img src="${item.image}" width="120">
+
+<h3>${item.name}</h3>
+
+<p>${item.price}</p>
+<p>Size: ${item.size || "Not Selected"}</p>
+<button onclick="removeItem(${index})">
+Remove
+</button>
+</div>
+`;
+
+});
+
+html += `<h2>Total Price: ₹${total}</h2>`;
+html += `
+<a id="whatsapp-order" target="_blank">
+<button style="padding:10px 20px;background:green;color:white;border:none;border-radius:5px;">
+Order on WhatsApp
+</button>
+</a>
+`;
+
+document.getElementById("cart-items").innerHTML = html;
+let message = "Hello Nikita Shoes Collection,%0A%0AMy Order:%0A";
+
+cartItems.forEach(item => {
+    message += item.name + " - " + item.price + " - Size: " + (item.size || "Not Selected") + "%0A";
+});
+
+message += "%0ATotal Price: ₹" + total;
+
+document.getElementById("whatsapp-order").href =
+"https://wa.me/919586979982?text=" + message;
+
+function removeItem(index){
+
+cartItems.splice(index,1);
+
+localStorage.setItem("cartItems",JSON.stringify(cartItems));
+
+location.reload();
+
+}
+
+</script>
+
+</body>
+</html>
