@@ -171,7 +171,7 @@ Order on WhatsApp
 
 });
     const banners = [
-    "newbanner.jpg",
+    "newbanner.PNG",
     "banner2.jpg",
     "banner3.jpg"
 ];
