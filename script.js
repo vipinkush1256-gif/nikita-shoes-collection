@@ -13,33 +13,33 @@ image:"loafer-brown.png"
 },
 
 {
-name:"Pink Casual Sneakers",
-price:"₹1399",
-image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+name:"air white shoes",
+price:"₹1099",
+image:"air-white-shoes.png"
 },
 
 {
-name:"Comfort Flats",
-price:"₹799",
-image:"https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=500"
+name:"nike revolution 7",
+price:"₹3299",
+image:"nike-revolution-7.png"
 },
 
 {
-name:"Stylish Wedges",
-price:"₹1499",
-image:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?w=500"
+name:"dinobirds white sneakers",
+price:"₹1099",
+image:"dinobirds-white-sneakers.png"
 },
 
 {
-name:"Daily Wear Sandals",
-price:"₹999",
-image:"https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500"
-},
-
-{
-name:"Trendy Slip Ons",
+name:"premium heel sandals",
 price:"₹1199",
-image:"https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500"
+image:"premium-heel-sandals.png"
+},
+
+{
+name:"purple rose jutti",
+price:"₹999",
+image:"purple-rose-jutti.png"
 },
 
 {
