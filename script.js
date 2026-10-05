@@ -1,15 +1,15 @@
 const products = [
 
 {
-name:"Ladies Fashion Heels",
-price:"₹1499",
-image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500"
+name:"loafer black",
+price:"₹999",
+image:"loafer-black.png"
 },
 
 {
-name:"Party Wear Sandals",
-price:"₹1299",
-image:"https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500"
+name:"loafer brown",
+price:"₹999",
+image:"loafer-brown.png"
 },
 
 {
